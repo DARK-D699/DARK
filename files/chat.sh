@@ -33,7 +33,7 @@ inter() {
 clear
 echo
 echo -e "               ${g}╔═══════════════╗"
-echo -e "               ${g}║ ${n}</>  ${c}DARK-X${g}   ║"
+echo -e "               ${g}║ ${n}</>  ${c}DARK-D${g}   ║"
 echo -e "               ${g}╚═══════════════╝"
 echo -e "  ${g}╔════════════════════════════════════════════╗"
 echo -e "  ${g}║  ${C} ${y}Checking Your Internet Connection¡${g}  ║"
@@ -202,10 +202,10 @@ display_messages() {
     banned=$(curl -s "$URL/ban" | jq -r --arg user "$username" '.[] | select(.username == $user) | "Are You banned — °|\(.username)|°  \(.bn_mesg)"')
     if [ -n "$banned" ]; then
      load
-echo -e "     ${c}____    __    ____  _  _     _  _ "
-echo -e "    ${c}(  _ \  /__\  (  _ \( )/ )___( \/ )"
-echo -e "    ${y} )(_) )/(__)\  )   / )  ((___))  ("
-echo -e "   ${y} (____/(__)(__)(_)\_)(_)\_)   (_/\_)\n"
+echo -e "     ____    __    ____  _  _     ____"
+echo -e "       ${c}(  _ \  /__\  (  _ \( )/ )___(  _  \"
+echo -e "       ${y} )(_) )/(__)\  )   / )  ((___))(_) )"
+echo -e "      ${y} (____/(__)(__)(_)\_)(_)\_)   (_____/\n\n"
         echo -e "         ${r}$banned${n}"
      echo
      exit 0
@@ -259,10 +259,10 @@ mkdir -p "$USERNAME_DIR"
 save_username() {
     clear
     load
-echo -e "        ${c}____    __    ____  _  _     _  _ "
-echo -e "       ${c}(  _ \  /__\  (  _ \( )/ )___( \/ )"
-echo -e "       ${y} )(_) )/(__)\  )   / )  ((___))  ("
-echo -e "      ${y} (____/(__)(__)(_)\_)(_)\_)   (_/\_)\n\n"
+echo -e "        ${c}____    __    ____  _  _     ____"
+echo -e "       ${c}(  _ \  /__\  (  _ \( )/ )___(  _  \"
+echo -e "       ${y} )(_) )/(__)\  )   / )  ((___))(_) )"
+echo -e "      ${y} (____/(__)(__)(_)\_)(_)\_)   (_____/\n\n"
     echo -e " ${A} ${c}Enter Your Anonymous ${g}Username${c}"
     echo
     read -p "[+]──[Enter Your Username]────► " username
